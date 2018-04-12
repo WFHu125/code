@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="date">
+    <input type="text" class="txt" name="" id="">
+    <input type="text" class="txt" name="" id="">
+    <input type="text" class="txt" name="" id="">
+    <input type="text" class="txt" name="" id="">
+    <script src="../libs/jquery.js"></script>
+    <script src="../libs/laydate/laydate.js"></script>
+    <script>
+        $(function () {
+            laydate.render({
+                elem: '#date' //指定元素
+            });
+
+            $(".txt").each(function () {
+                var that = $(this);
+                $(this).blur(function () {
+                    $(this).css("background-color", "#000");
+                });
+                
+            });
+        })
+    </script>
+</body>
+
+</html>
