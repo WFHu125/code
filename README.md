@@ -1,10 +1,24 @@
 # example
 
-### js实现京东无延迟菜单效果
-`menu.html`
-### 全屏/整屏滚动组件fullPage演示-垂直滚动
-`fullScreen.html`
+### js 实现京东无延迟菜单效果
+
+`menu/menu.html`
+
+### 全屏/整屏滚动组件 fullPage 演示-垂直滚动
+
+`fullScreen/fullScreen.html`
+
 ### 轮播图示例
-`lunbo.html`
-### 日期选择插件-示例demo
-`laydate.html`
+
+`lunbo/lunbo.html`
+
+### cookie
+
+`cookie/cookie.html`
+
+### 图片懒加载
+
+```
+lazyload.js // 使用getBoundingClientRect API实现
+lazyload1.js // 使用IntersectionObserver实现
+```

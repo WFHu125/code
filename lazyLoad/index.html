@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>图片懒加载</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .container {
+        position: relative;
+        height: 100%;
+      }
+      header,
+      footer {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: #eee;
+        color: #333;
+        z-index: 10;
+      }
+      header {
+        top: 0;
+      }
+      footer {
+        bottom: 0;
+        left: 0;
+      }
+      main {
+        width: 100%;
+        /* height: 100%; */
+        position: absolute;
+        top: 50px;
+        bottom: 50px;
+        overflow-y: scroll;
+        /* overflow: scroll-y; */
+      }
+      .list {
+        width: 50%;
+        height: 200px;
+        margin: 0 auto 20px;
+        text-align: center;
+      }
+      .list img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>头部</header>
+      <main class="main">
+        <div class="list">
+          <img
+            src="./images/default1.png"
+            data-src="http://img3.imgtn.bdimg.com/it/u=3370732365,2291579668&fm=15&gp=0.jpg"
+            alt=""
+            class="lazyload"
+          />
+        </div>
+        <div class="list">
+          <img
+            src="./images/default1.png"
+            data-src="http://img1.imgtn.bdimg.com/it/u=2701168297,3567963976&fm=26&gp=0.jpg"
+            alt=""
+            class="lazyload"
+          />
+        </div>
+        <div class="list">
+          <img
+            src="./images/default1.png"
+            data-src="http://img0.imgtn.bdimg.com/it/u=1239339555,2381139711&fm=26&gp=0.jpg"
+            alt=""
+            class="lazyload"
+          />
+        </div>
+        <div class="list">
+          <img
+            src="./images/default1.png"
+            data-src="http://img4.imgtn.bdimg.com/it/u=2214806038,3888769402&fm=26&gp=0.jpg"
+            alt=""
+            class="lazyload"
+          />
+        </div>
+        <div class="list">
+          <img
+            src="./images/default1.png"
+            data-src="http://img5.imgtn.bdimg.com/it/u=2620637634,328945595&fm=26&gp=0.jpg"
+            alt=""
+            class="lazyload"
+          />
+        </div>
+        <div class="list">
+          <img
+            src="./images/default1.png"
+            data-src="http://img3.imgtn.bdimg.com/it/u=1308504387,1936071420&fm=26&gp=0.jpg"
+            alt=""
+            class="lazyload"
+          />
+        </div>
+        <div class="list">
+          <img
+            src="./images/default1.png"
+            data-src="http://img4.imgtn.bdimg.com/it/u=2592071304,1246962514&fm=26&gp=0.jpg"
+            alt=""
+            class="lazyload"
+          />
+        </div>
+        <div class="list">
+          <img
+            src="./images/default1.png"
+            data-src="http://img4.imgtn.bdimg.com/it/u=2929974623,408334583&fm=26&gp=0.jpg"
+            alt=""
+            class="lazyload"
+          />
+        </div>
+      </main>
+
+      <footer>底部</footer>
+    </div>
+    <!-- 使用getBoundingClientRect API实现 -->
+    <script src="lazyload.js"></script>
+    <!-- 使用IntersectionObserver实现 -->
+    <!-- <script src="lazyload1.js"></script> -->
+  </body>
+</html>
