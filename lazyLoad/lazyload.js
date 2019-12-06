@@ -22,9 +22,9 @@ class LazyLoad {
   // 判断是否该图片可以加载
   canLoad() {
     let imglist = this.imglist;
-    for (let i = imglist.length; i--; ) {
-      this.getBound(imglist[i]) && this.loadImage(imglist[i], i);
-    }
+    imglist.forEach((item, index) => {
+      this.getBound(item) && this.loadImage(item, index);
+    });
   }
   // 当浏览器滚动的时候，继续判断
   bindEvent() {
